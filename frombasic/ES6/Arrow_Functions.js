@@ -3,5 +3,7 @@ function add(a, b) {
 }
 console.log(add(5, 3));
 
+
+//arrow function
 let myFunction =(a,b) => a + b;
 console.log(myFunction(5, 3));
