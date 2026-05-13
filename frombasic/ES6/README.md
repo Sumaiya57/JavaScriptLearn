@@ -10,6 +10,15 @@ array methods(map,filters),react event handlers
 
 ---
 
-## Template Literals
+# Template Literals
 modern way to write dynamic strings easily
 Better for HTML generation
+---
+# array distructing
+much shorter and clean
+-API and Function
+---
+# object distructing
+Cleaner and faster.
+
+---
