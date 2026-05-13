@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="javaScriptDrumKIt.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>JS DRUM Kit 🥁</h1>
+        <p class="hint">Play with keyboard or click/tap the pads. (A S D F G H J K L)</p>
+        <div class="pads" id="pads">
+            <button class="pad" data-key="A" data-sound="kick">A<br><small>Kick</small></button>
+             <button class="pad" data-key="A" data-sound="snare">S<br><small>snare</small></button>
+             <button class="pad" data-key="D" data-sound="hihat">D<br><small>Hi‑Hat</small></button>
+      <button class="pad" data-key="F" data-sound="tom1">F<br><small>Tom 1</small></button>
+      <button class="pad" data-key="G" data-sound="tom2">G<br><small>Tom 2</small></button>
+      <button class="pad" data-key="H" data-sound="clap">H<br><small>Clap</small></button>
+      <button class="pad" data-key="J" data-sound="ride">J<br><small>Ride</small></button>
+      <button class="pad" data-key="K" data-sound="perc">K<br><small>Perc</small></button>
+      <button class="pad" data-key="L" data-sound="cowbell">L<br><small>Cowbell</small></button>
+      
+        </div>
+        <div class="controls">
+            <label><span>Master volume</span>
+            <input id="masterVol" type="range" min="0" max="1" step="0.01" value="0.9">
+            </label>
+            <button id="unlockAudio">Unlock Audio(click once)</button>
+        </div>
+        <footer><small>Built with Web Audio API — no samples needed</small></footer>
+    </main>
+    <script src="javaScriptDrumKIt.js"></script>
+</body>
+</html>

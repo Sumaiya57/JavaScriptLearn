@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .body{
+    font-family:Arial, sans-serif;
+    background: #f4f4f4;
+    text-align:center;
+    padding-top: 50px;
+}
+.box{
+    width:150px;
+    height:150px;
+    margin:20px auto;
+    background-color: blanchedalmond;
+    color:rgb(203, 17, 17);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition:transform 0.4s;
+    cursor:pointer;
+    font-size: 18px;
+}
+
+.translate:hover{
+    transform: translate(50px,20px);
+}
+
+.rotate:hover{
+    transform:rotate(20deg);
+    transform:rotate(-20deg);
+}
+.scale:hover{
+    transform:scaleX(2); /* increase */
+    transform:scale(2,3);
+}
+
+.skew:hover{
+    transform:skew(20deg,30deg);
+}
+.Combo{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+    </style>
+    </head>
+
+ <body>
+<div class="box translate">Translate</div>
+  <div class="box rotate">Rotate</div>
+  <div class="box scale">Scale</div>
+  <div class="box skew">Skew</div>
+  <div class="box combo">Combo</div>
+ </body>   
+ </html>

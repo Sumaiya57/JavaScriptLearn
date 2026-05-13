@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="inbox">
+        <h3> CTRL + SELECT TO DO THE MAGIC</h3>
+      <div class="item">
+        <input type="checkbox">
+        <p>This is an inbox layout.</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Check one item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Hold down your Shift key</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Check a lower item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Everything inbetween should also be set to checked</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Try do it with out any libraries</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Just regular JavaScript</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Good Luck!</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Don't forget to tweet your result!</p>
+      </div>
+    </div>
+    <footer>
+      <p> Designed by Gift</p>
+    </footer>
+    
+
+
+   <style>
+     html {
+      font-family: sans-serif;
+      background:#254;
+    }
+
+    .inbox {
+      max-width:400px;
+      margin:50px auto;
+      background:white;
+      border-radius:5px;
+      box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+    }
+h3 {
+	text-align: center;
+	padding: 9px 4px 0px 6px
+}
+    .item {
+      display:flex;
+      align-items:center;
+      border-bottom: 1px solid #F1F1F1;
+    }
+
+    .item:last-child {
+      border-bottom:0;
+    }
+
+
+    input:checked + p {
+      background:#F9F9F9;
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      margin:20px;
+    }
+
+    p {
+      margin:0;
+      padding:20px;
+      transition:background 0.2s;
+      flex:1;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+      border-left: 1px solid #D1E2FF;
+    }
+footer{
+	text-align: center;
+	color: #fff
+}
+
+
+   </style>
+
+   <script>
+    const checkboxes = document.querySelectorAll('.inbox input[type = "checkbox"]');
+
+let lastChecked;
+
+  function handleCheck(e) {
+
+    let inBetween = false;
+
+if (e.shiftKey && this.checked) {
+    checkboxes.forEach(checkbox => {
+    console.log(checkbox);
+    if (checkbox === this || checkbox === lastChecked) {
+      inBetween = !inBetween;
+      console.log('STarting to check them inbetween!');
+    }
+
+    if (inBetween) {
+      checkbox.checked = true;
+    }
+  });
+}
+
+lastChecked = this;
+}
+
+checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+
+   </script>
+</body>
+</html>

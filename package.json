@@ -1,0 +1,20 @@
+{
+  "name": "javascriptlearn",
+  "version": "1.0.0",
+  "description": "it is amazing packages",
+  "homepage": "https://github.com/Sumaiya57/JavaScriptLearn#readme",
+  "bugs": {
+    "url": "https://github.com/Sumaiya57/JavaScriptLearn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumaiya57/JavaScriptLearn.git"
+  },
+  "license": "ISC",
+  "author": "Sumaiya Kamal",
+  "type": "commonjs",
+  "main": "basic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

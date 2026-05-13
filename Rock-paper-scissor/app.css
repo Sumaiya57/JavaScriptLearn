@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+background-color: black;
+color:aliceblue;
+height:5rem;
+text-align: center;
+line-height:5rem;
+}
+.choices{
+    height: 100px;
+    weight:100px;
+    /* display: flex;
+    flex-wrap: wrap;
+    padding: 5px; */
+}
