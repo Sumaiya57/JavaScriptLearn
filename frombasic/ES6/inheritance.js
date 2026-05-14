@@ -42,3 +42,20 @@ const car1 = new Car();
 
 car1.start();
 car1.drive();
+
+//super()
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+class Student extends Person {
+    constructor(name, studentId) {
+        super(name); // Call the parent constructor
+        this.studentId = studentId;
+    }
+}
+const student1 = new Student("Rahim", "S12345");
+console.log(student1.name);
+console.log(student1.studentId);

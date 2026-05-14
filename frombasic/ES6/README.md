@@ -40,3 +40,4 @@ Better for HTML generation
 # inheritance
 - one class reuse the properties and methods of another class.
 - If you update the parent class,All child classes automatically get the update.
+- super() : call parent constructor
