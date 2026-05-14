@@ -34,3 +34,6 @@ Better for HTML generation
 - Collect multiple values into an array.
 
 ---
+# classes
+- ES6 introduced cleaner syntax for OOP.
+---
