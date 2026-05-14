@@ -37,3 +37,6 @@ Better for HTML generation
 # classes
 - ES6 introduced cleaner syntax for OOP.
 ---
+# inheritance
+- one class reuse the properties and methods of another class.
+- If you update the parent class,All child classes automatically get the update.
