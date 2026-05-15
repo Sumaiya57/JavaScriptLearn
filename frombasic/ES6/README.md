@@ -45,3 +45,8 @@ Better for HTML generation
 # Modules
 - split code into multiple files
 - export and import 
+
+# promises
+- an object
+- 3 states:1. Pending 2. Fulfilled (Resolved) 3. Rejected
+- asynchronous tasks
