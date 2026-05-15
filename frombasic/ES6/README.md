@@ -59,3 +59,5 @@ Better for HTML generation
 - “Give me each VALUE one by one from this list”
 - use only need values
 ---
+# Map
+- 
