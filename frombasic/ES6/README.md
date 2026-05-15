@@ -41,12 +41,21 @@ Better for HTML generation
 - one class reuse the properties and methods of another class.
 - If you update the parent class,All child classes automatically get the update.
 - super() : call parent constructor
-
+---
 # Modules
 - split code into multiple files
 - export and import 
-
+---
 # promises
 - an object
 - 3 states:1. Pending 2. Fulfilled (Resolved) 3. Rejected
 - asynchronous tasks
+---
+# for...of
+- basic syntax 
+    for (const item of iterable) {
+    // code
+     }
+- “Give me each VALUE one by one from this list”
+- use only need values
+---
