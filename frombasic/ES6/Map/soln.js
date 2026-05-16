@@ -31,7 +31,7 @@ console.log(map2.get(102)); // { name: "Rahim", marks: 85 }
 const objKey2 = { name: "Karim", marks: 90 };
 map2.set(103, objKey2);
 console.log(map2.get(103)); // { name: "Karim", marks: 90 }
-const objKey3 = { name: "Jabbar", marks: 70 };
+const objKey3 = { name: "Jabbar", marks: 90 };
 map2.set(104, objKey3);
 console.log(map2.get(104)); // { name: "Jabbar", marks: 70 }
 
