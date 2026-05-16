@@ -6,7 +6,7 @@ function login(username,password)
     
     async function show(){
         try { 
-            const result = await login("admin", "1234"); 
+            const result = await login("admin", "1434"); 
             console.log(result); 
         } 
         catch (error) { 
