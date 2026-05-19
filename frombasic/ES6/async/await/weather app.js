@@ -19,10 +19,14 @@ function getWeather(city){
 }
 
 async function showdata(){  
+    try{
       const result = await getCity();
        console.log(result);
       const result1 = await getWeather(result);
        console.log(result1);
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 
 showdata();
