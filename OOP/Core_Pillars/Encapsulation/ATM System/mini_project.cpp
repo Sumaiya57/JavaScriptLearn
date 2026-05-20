@@ -44,15 +44,15 @@ public:
 };
 
 int main() {
-    int pin;
+    int pin=1234; // Default PIN for testing
     double balance;
-    cin >> balance >> pin;
+    cin >> balance; // Initial balance input
     ATM myATM(balance, pin); // Initial balance and PIN
 
     int enteredPin;
     cout << "Enter your PIN: ";
     cin >> enteredPin;
-    myATM.login(enteredPin);
+
 if (myATM.login(enteredPin)) {
     double depositAmount;
     cout << "Enter amount to deposit: ";
