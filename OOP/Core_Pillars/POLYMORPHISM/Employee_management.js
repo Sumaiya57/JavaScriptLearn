@@ -36,3 +36,14 @@ employees.calculateSalary();
 manager.calculateSalary();
 developer.calculateSalary();
 intern.calculateSalary();
+
+//vs 
+
+const salary = employees.calculateSalary();
+console.log(salary);
+const managerSalary = manager.calculateSalary();
+console.log(managerSalary);
+const developerSalary = developer.calculateSalary();
+console.log(developerSalary);
+const internSalary = intern.calculateSalary();
+console.log(internSalary);
