@@ -11,6 +11,7 @@ class Employee {
 class developer extends Employee {
     constructor(name, salary) {
         super(name, salary);
+        
     }
     salary() {
         console.log("Calculating salary for developer:");
@@ -20,6 +21,7 @@ class developer extends Employee {
 class manager extends Employee {
     constructor(name, salary) {
         super(name, salary);
+        
     }
     salary() {
         console.log("Calculating salary for manager:");
